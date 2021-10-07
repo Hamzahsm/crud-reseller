@@ -1,18 +1,10 @@
 <?php
 session_start();
 
-if(!isset($_SESSION["login"])) {
-  header('Location: login.php');
-  exit;
-}   
-
 require 'functions.php';
 
 $datas = query("SELECT * FROM produk");
 
-if(isset($_POST["cari"])) {
-  $datas = cari($_POST["keyword"]);
-}
 ?>  
  
 <!doctype html> 
@@ -115,7 +107,7 @@ if(isset($_POST["cari"])) {
                         </table>
                       </div>
                     </section>
-                  </div>
+                  </div> 
                 </div>
               </div>
             </div>
