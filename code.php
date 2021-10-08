@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost","root","","phptutorials");
+$con = mysqli_connect("localhost","root","","ssve");
 
 if(isset($_POST['update_stud_data']))
 {
